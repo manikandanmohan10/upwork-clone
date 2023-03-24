@@ -1,0 +1,91 @@
+.nav-bar > *{
+    justify-content: space-around;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+.logo-img {
+    padding-top: 30px;
+    width: 80px;
+    height: 80px;
+}
+
+.my-list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.left-side{
+    display: flex;
+}
+
+.right-side{
+    display: flex;
+}
+
+.my-list li {
+    font-size: small;
+    margin-top: 13px;
+    margin-right: 20px;
+    color: black;
+    line-height: 80px;
+}
+
+.my-list li svg{
+    height: 25px;
+}
+
+.my-list li svg:hover{
+    transform: rotateZ(180deg);
+}
+
+.signup{
+    height: 40px;
+    background-color: #14a800;
+}
+
+.search-bar{
+    display: flex;
+    border-style: solid;
+    border-radius: 500px;
+    border-color: rgb(206, 201, 201);
+}
+
+.search-bar form input{
+    margin-left: 2px;
+    margin-right: 8px;
+    border-radius: 500px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+input :placeholder{
+    font-size: small;
+}
+
+.search-bar label{
+    font-size: small;
+}
+
+.search-bar svg{
+    height: 25px;
+    width: 20px;
+    margin-top: 3px;
+}
+
+.search-bar button{
+    border: none;
+    border-radius: 500px;
+    background-color: transparent;
+}
+
+  
