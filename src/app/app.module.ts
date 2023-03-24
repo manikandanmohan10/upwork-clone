@@ -37,7 +37,8 @@ import { MatCheckboxModule } from '@angular/material/checkbox'
 import { MatRadioModule } from '@angular/material/radio';
 import { HostListenerDirective } from './host-listener.directive';
 import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component'
+import { LoginComponent } from './login/login.component';
+import { SidenavComponent } from './sidenav/sidenav.component'
 
 
 const material = [
@@ -78,7 +79,8 @@ const material = [
     NavBarComponent,
     HostListenerDirective,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,

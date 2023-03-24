@@ -1,35 +1,44 @@
-<div class="home-component-nav">
-    <ul class="list-items">
-        <li> <a href="#"> Development & IT </a></li>
-        <li> <a href="#"> Design & Creative </a></li>
-        <li> <a href="#"> Sales & Marketing </a></li>
-        <li> <a href="#"> Writing & Translation </a></li>
-        <li> <a href="#"> Admin & Customer Support</a></li>
-        <li>  More
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img">
-                <path vectorEffect="non-scaling-stroke" stroke="var(--icon-color, #001e00)" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="1.5" d="M18 10l-6 5-6-5"></path>
-            </svg>
-        </li>
-    </ul>
+<div *ngIf="toggleValue; else elseBlock">
+    <app-sidenav></app-sidenav>
 </div>
 
-<div class="home-content">
-    <h1 class="title">
-        <span >How work <br> Should work</span>
-    </h1>
-    <p class="content"> 
-        <span> Forget the old rules. You can have the 
-            best people. <br> Right now. Right here</span>
-    </p>
-    <button class="get-started" mat-fab extended>Get started</button>
+<ng-template #elseBlock>
 
-    <p class="trusted-by">Trusted by</p>
-
-    <div class="trusted-by-logo">
-        <img src="assets/static/microsoft.svg" alt="">
-        <img src="assets/static/airbnb.svg" alt="">
-        <img src="assets/static/bissell.svg" alt="">
+    <div class="home-component-nav" >
+        <ul class="list-items">
+            <li> <a href="#"> Development & IT </a></li>
+            <li> <a href="#"> Design & Creative </a></li>
+            <li> <a href="#"> Sales & Marketing </a></li>
+            <li> <a href="#"> Writing & Translation </a></li>
+            <li> <a href="#"> Admin & Customer Support</a></li>
+            <li> More
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img">
+                    <path vectorEffect="non-scaling-stroke" stroke="var(--icon-color, #001e00)" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="1.5" d="M18 10l-6 5-6-5"></path>
+                </svg>
+            </li>
+        </ul>
     </div>
+    
+    <div class="home-content">
+        <h1 class="title">
+            <span >How work <br> Should work</span>
+        </h1>
+        <p class="content"> 
+            <span> Forget the old rules. You can have the 
+                best people. <br> Right now. Right here</span>
+        </p>
+        <button class="get-started" mat-fab extended>Get started</button>
+    
+        <p class="trusted-by">Trusted by</p>
+    
+        <div class="trusted-by-logo">
+            <img src="assets/static/microsoft.svg" alt="">
+            <img src="assets/static/airbnb.svg" alt="">
+            <img src="assets/static/bissell.svg" alt="">
+        </div>
+    
+    </div>
+</ng-template>
 
-</div>
+
 

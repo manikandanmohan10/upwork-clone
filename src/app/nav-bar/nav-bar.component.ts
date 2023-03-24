@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { LoginComponent, DialogData } from '../login/login.component';
+import { UpworkServiceService } from '../upwork-service.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -10,7 +11,8 @@ import { LoginComponent, DialogData } from '../login/login.component';
 export class NavBarComponent {
   username: any
   password: any
-  constructor(public dialog: MatDialog){}
+  toggleValue = false
+  constructor(public dialog: MatDialog, public navbar: UpworkServiceService){}
 
   openDialog(){
     const dialogRef = this.dialog.open(LoginComponent, {
@@ -24,4 +26,11 @@ export class NavBarComponent {
       this.username = result;
     })
   }
+
+  toggleOpen(){
+    this.toggleValue = !this.toggleValue
+    this.navbar.toggleOption(this.toggleValue)
+  }
+
+
 }

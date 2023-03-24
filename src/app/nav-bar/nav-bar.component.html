@@ -1,4 +1,24 @@
 <mat-toolbar color="none" class="nav-component">
+    
+    
+    <!-- <mat-drawer-container class="container" autosize>
+        <mat-drawer #drawer class="sidenav" mode="side">
+            <ul class="sidenav-items">
+                <button mat-button> <li>Find Talent</li> </button>
+                <button mat-button> <li>Find Work</li> </button>
+                <button mat-button> <li>Why Upwork</li> </button>
+                <button mat-button> <li>Enterprise</li> </button>
+                <button mat-button> <li>Login</li> </button>
+            </ul>
+        </mat-drawer>
+        <div class="reorder-icon">
+            <button mat-button (click)="drawer.toggle()"> <mat-icon>reorder</mat-icon></button>
+        </div>
+    </mat-drawer-container> -->
+    <div class="reorder-icon">
+        <button (click)="toggleOpen()"> <mat-icon>reorder</mat-icon></button>
+    </div>
+
     <div class="nav-bar">
         <div class="left-side">
             <img class='logo-img' src="assets/static/Upwork-Logo.png" alt="logo">
@@ -48,4 +68,4 @@
 
     </div>
 </mat-toolbar>
-
+<mat-divider></mat-divider>

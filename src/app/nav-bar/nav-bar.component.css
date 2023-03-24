@@ -88,4 +88,43 @@ input :placeholder{
     background-color: transparent;
 }
 
-  
+.reorder-icon button{
+    border: none;
+}
+
+.reorder-icon{
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.sidenav-items{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1150px) {
+    .my-list li {
+        display: none;
+    }
+    .logo-img{
+        margin-bottom: 28px;
+    }
+  }
+
+@media (max-width: 750px){
+    .search-bar{
+        width: 200px;
+    }
+}
+
+@media (max-width: 500px){
+    .search-bar{
+        display: none;
+    }
+}
+
+@media (min-width: 1150px){
+    .reorder-icon{
+        display: none;
+    }
+}
