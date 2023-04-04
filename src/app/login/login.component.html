@@ -1,17 +1,17 @@
 <div class="login-component">
     <h1 mat-dialog-title class="title"> Login to continue </h1>
     <div mat-dialog-content class="login">
-      <form action="">
+      <form [formGroup]="registrationForm" onsubmit="submit()">
         <div class="inp">
             <label for="">Username</label>
-            <input type="text" name="" id="">
+            <input formControlName="username" type="text" name="" id="">
         </div>
         <div class="inp">
             <label for="">Password</label>
-            <input type="password" name="" id="">
+            <input formControlName="password" type="password" name="" id="">
         </div>
-        <button type="submit">Login</button>
+        <button (click)="submit()" type="submit">Login</button>
       </form>
-      
+      <!-- {{registrationForm | json}} -->
     </div>
 </div>

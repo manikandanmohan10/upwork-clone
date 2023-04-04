@@ -1,6 +1,4 @@
 <mat-toolbar color="none" class="nav-component">
-    
-    
     <!-- <mat-drawer-container class="container" autosize>
         <mat-drawer #drawer class="sidenav" mode="side">
             <ul class="sidenav-items">
@@ -21,25 +19,25 @@
 
     <div class="nav-bar">
         <div class="left-side">
-            <img class='logo-img' src="assets/static/Upwork-Logo.png" alt="logo">
+            <a href="#"> <img class='logo-img' src="assets/static/Upwork-Logo.png" alt="logo"> </a>
             <ul class="my-list">
                 <li>Find Talent
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img">
         <path vectorEffect="non-scaling-stroke" stroke="var(--icon-color, #001e00)" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="1.5" d="M18 10l-6 5-6-5"></path>
         </svg> 
             </li> 
                 <li>Find Work
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img">
         <path vectorEffect="non-scaling-stroke" stroke="var(--icon-color, #001e00)" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="1.5" d="M18 10l-6 5-6-5"></path>
         </svg> 
             </li> 
                 <li>Why Upwork
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img">
         <path vectorEffect="non-scaling-stroke" stroke="var(--icon-color, #001e00)" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="1.5" d="M18 10l-6 5-6-5"></path>
         </svg> 
                 </li> 
                 <li>Enterprise 
-                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" role="img">
         <path vectorEffect="non-scaling-stroke" stroke="var(--icon-color, #001e00)" strokeLinecap="round" strokeLinejoin="round" strokeMiterlimit="10" strokeWidth="1.5" d="M18 10l-6 5-6-5"></path>
         </svg>
                 </li> 
@@ -62,10 +60,12 @@
             </div>
             <div>
                 <button mat-button (click)="openDialog()">Log In</button>
-                <button class="signup" mat-fab extended>Sign Up</button>
+                <a href="/signup" style="text-decoration: none;"> <button class="signup" mat-fab extended>Sign Up</button></a>
             </div>
         </div>
 
     </div>
 </mat-toolbar>
 <mat-divider></mat-divider>
+<app-home></app-home>
+

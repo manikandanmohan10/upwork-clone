@@ -38,7 +38,10 @@ import { MatRadioModule } from '@angular/material/radio';
 import { HostListenerDirective } from './host-listener.directive';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { SidenavComponent } from './sidenav/sidenav.component'
+import { SidenavComponent } from './sidenav/sidenav.component';
+import { SignupComponent } from './signup/signup.component';
+import { LoginPageComponent } from './login-page/login-page.component'
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 const material = [
@@ -80,9 +83,12 @@ const material = [
     HostListenerDirective,
     HomeComponent,
     LoginComponent,
-    SidenavComponent
+    SidenavComponent,
+    SignupComponent,
+    LoginPageComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,

@@ -12,6 +12,7 @@ export class NavBarComponent {
   username: any
   password: any
   toggleValue = false
+  defaultVal = false
   constructor(public dialog: MatDialog, public navbar: UpworkServiceService){}
 
   openDialog(){
@@ -32,5 +33,7 @@ export class NavBarComponent {
     this.navbar.toggleOption(this.toggleValue)
   }
 
-
+  signUpButton(){
+    this.defaultVal = !this.defaultVal
+  }
 }
