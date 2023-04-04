@@ -1,0 +1,82 @@
+nav .logo-img{
+    height: 60px;
+    width: 100px;
+}
+
+nav{
+    margin-left: 10px;
+}
+
+.content{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.content form button{
+    height: 35px;
+    width: 275px;
+    margin-top: 20px;
+    background-color: #14a800;
+}
+
+.content form input{
+    border-style: solid;
+    border-color: grey;
+    height: 35px;
+    width: 275px;
+}
+
+/* .google{
+    text-align: center;
+}
+
+.google button{
+    height: 35px;
+    width: 275px;
+    margin-top: 20px;
+    background-color: #4285f4;
+}
+
+.google button img{
+    border-radius: 50px;
+    height: 29px;
+    margin-left: -30px;
+}
+
+.label{
+    margin-left: 50px;
+} */
+
+.google{
+    text-align: center;
+}
+
+.google .btn{
+    display: flex;
+    gap: 10px;
+    background-color: #4285f4;
+    height: 35px;
+    width:275px;
+    /* justify-content: space-between; */
+}
+
+.btn img{
+    border-radius: 50px;
+    height: 29px;
+}
+
+
+
+/* .btn::before{
+    background-image: url(src/assets/static/google-logo.svg);
+    border-radius: 500px;
+    height: 30px;
+    width: 30px;
+    margin-top: 3px;
+    padding-top: 4px;
+} */
+
+

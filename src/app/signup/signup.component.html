@@ -1,0 +1,42 @@
+<div class="signup">
+    <nav>
+        <a href="#"> <img class='logo-img' src="assets/static/Upwork-Logo.png" alt="logo"> </a>
+    </nav>
+    <div class="content">
+        <h3>Join as a client or freelancer</h3>
+        <fieldset class="fieldset">
+            <label for="client">
+                <div class="radio-button">
+                    <div class="input">
+                        <input type="radio" id="client" name="Radio" value="Client" [(ngModel)]="radioSelected"  #clientInput (change)="handleRadioInputChange('client')">
+                    </div>
+                    <div class="label">
+                        I'm a client, hiring for a project
+                    </div>
+                </div>
+            </label>
+
+            <label for="freelancer">
+                <div class="radio-button" >
+                    <div class="input">
+                        <input type="radio" id="freelancer" name="Radio" value="Freelancer" [(ngModel)]="radioSelected" #freelancerInput (change)="handleRadioInputChange('freelancer')">
+                    </div>
+                    <div class="label">
+                        I'm a freelancer, looking for work
+                    </div>
+                </div>
+            </label>
+        </fieldset>
+        <div class="submit">
+            <button mat-fab extended>{{buttonValue}}</button>
+        </div>
+        <div class="login">
+            <span>
+                Already have an account?
+            </span>
+            <span class="link">
+                <a href="/login">Log In</a>
+            </span>
+        </div>
+    </div>
+</div>

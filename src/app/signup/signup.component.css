@@ -1,0 +1,67 @@
+nav .logo-img{
+    height: 60px;
+    width: 100px;
+}
+
+nav{
+    margin-top: -10px;
+    padding: 10px;
+}
+
+.content{
+    text-align: center;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.radio-button .input{
+    margin-right: -100px;
+    margin-top: -10px;
+    size: 20px;
+}
+
+.radio-button .label{
+    font-size: x-large;
+    font-style: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: start;
+    width: 150px;
+}
+
+.fieldset{
+    gap: 30px;
+    justify-content: center;
+    display: flex;
+}
+
+.radio-button{
+    border-style: solid;
+    padding: 40px;
+    height: 200px;
+    width: 200px
+}
+
+.radio-button:hover{
+    border-color: #14a800;
+    /* border-width: 3px; */
+}
+
+.submit button{
+    margin-top: 50px;
+    background-color: #14a800;
+    width: 250px;
+}
+
+.login{
+    margin-top: 10px;
+}
+
+.login a{
+    text-decoration: none;
+    color: #14a800;
+}
+
+.content h3{
+    margin-bottom: 50px;
+    font-weight: 500;
+}

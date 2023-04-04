@@ -1,0 +1,43 @@
+.sidenav-items{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 20px;
+  margin-left: -10px;
+}
+
+.sidenav-items li{
+  font-style: normal;
+  color: black;
+  font-family: sans-serif;
+  font-size: small;
+
+}
+
+.sidenav-items li{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sidenav-items li svg{
+  margin-top: 8px;
+  height: 20px;
+}
+
+.sidenav-component{
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+footer button{
+  border-radius: 500px;
+  background-color: #14a800;
+  width: 100%;
+}
